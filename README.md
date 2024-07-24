@@ -40,11 +40,14 @@
          1) In Lambda --> Configuration --> Select the role
          2) Attach the policy --> administrator access**
 
-**4) Now create an S3 bucket with the bucket name specified in the app.py**
+![LambdaIAM](https://github.com/user-attachments/assets/c8681c1f-166b-4097-8730-23034a96ae84)
+
+
+**5) Now create an S3 bucket with the bucket name specified in the app.py**
 
 ![S3Screenshot](https://github.com/user-attachments/assets/9c9f645d-b29a-4205-bfc6-05b5e25deea6)
 
-5) **Finally open the Postman application. Create a new file and select "post" request. Then paste the URL(which was on the stages page that we deployed earlier) along with it add our created route as /blog-generation at the end of the URL.**
+**6) Finally open the Postman application. Create a new file and select "post" request. Then paste the URL(which was on the stages page that we deployed earlier) along with it add our created route as /blog-generation at the end of the URL.**
 
 **Inside the Body of Postman add this,**
 
@@ -52,9 +55,11 @@
       "blog_topic" : "........." (any topic you want inside the quotes)
     }
 
+**This "blog_topic" variable we have specified inside the lambda_handler. Specify the same variable name over here in the body of Post request.**
+
 **and click send**
 
-6) **We would receive output as "Blog Generated Successfully"**
+**7) We would receive output as "Blog Generated Successfully"**
 
 **To view it go to Lambda --> Monitor --> Cloudwatch Logs**
 
