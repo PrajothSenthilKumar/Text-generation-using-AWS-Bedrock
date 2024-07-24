@@ -6,7 +6,7 @@
 
 **1) Lambda function logic to invoke the Bedrock Foundation Model. Whenever my api-gateway captures any post event and the context, it triggers the Lambda function by hitting the lambda-handler() first.**
 
-![LamdaScreenshot](https://github.com/user-attachments/assets/4a289164-25b1-4f1d-aa0e-f94962463da4)
+![LambdaScreenshot](https://github.com/user-attachments/assets/d1534103-c49e-4a6b-9d1d-618116527b84)
 
 ![LambdaScreenshot1](https://github.com/user-attachments/assets/680b695a-65fa-49a2-9b1e-ccc50e14b712)
 
