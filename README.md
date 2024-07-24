@@ -17,27 +17,27 @@
 ![LamdaLayer](https://github.com/user-attachments/assets/0425fdad-d76e-4012-bdeb-1df7bd89d235)
 
 **3) Create the Api gateway, so it can trigger the Lambda function. After creating it, inside Api gateway, create routes for the created api as,
-         1) Request Type --> Post
+         1) Request Type --> Post,
          2) /blog-generation, and create route.**
 
 ![LambdaRoute](https://github.com/user-attachments/assets/42c185a1-7c34-4008-8fd1-b6660d8a2583)
 
 
    **After that select the created route "POST" and attach integration by,
-         1) select "create and attach and integration"
+         1) select "create and attach an integration",
          2) integration type --> Lambda function (select our Lambda function) and create.**
 
 ![LambdaIntegration](https://github.com/user-attachments/assets/35c61691-35e2-42f9-9b65-b2a1beca7b41)
 
     Finally, create the stages for the created API in the Api gateway by,
-         1) Create --> stages
+         1) Create --> stages,
          2) Name = dev, and create the stage. Inside this "dev" environment click "deploy" in order to deploy this entire URL that I have to use to interact with my Lambda function.
          
 ![LambdaStage](https://github.com/user-attachments/assets/2a3f50e6-a942-42ed-89aa-1b88d0aa327a)
 
 
 **4) Add the necessary permission to invoke the bedrock model by attaching the required permissions to the role attached to the Lambda function. To do that,
-         1) In Lambda --> Configuration --> Select the role
+         1) In Lambda --> Configuration --> Select the role,
          2) Attach the policy --> administrator access**
 
 ![LambdaIAM](https://github.com/user-attachments/assets/c8681c1f-166b-4097-8730-23034a96ae84)
@@ -55,7 +55,7 @@
       "blog_topic" : "........." (any topic you want inside the quotes)
     }
 
-**This "blog_topic" variable we have specified inside the lambda_handler. Specify the same variable name over here in the body of Post request.**
+**This "blog_topic" variable we have specified inside the lambda_handler. Specify the same variable name over here in the body of the Post request.**
 
 **and click send**
 
